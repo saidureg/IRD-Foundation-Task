@@ -1,3 +1,22 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.accordion-item {
+  border-bottom: 1px solid #ccc;
+}
+
+.accordion-header {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.accordion-header.open {
+  background-color: #f5f5f5;
+  border-radius: 12px;
+}
+
+.accordion-content {
+  cursor: pointer;
+  padding: 10px;
+}

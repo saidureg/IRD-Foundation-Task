@@ -56,7 +56,9 @@ const DynamicDuaPage = async ({ params, searchParams }) => {
                   <span>{dua?.refference_en}</span>
                 </p>
                 <div className="card-actions justify-between items-center">
-                  {dua?.audio ? <AudioPlayer audioSrc={dua?.audio} /> : ""}
+                  <div>
+                    {dua?.audio ? <AudioPlayer audioSrc={dua?.audio} /> : ""}
+                  </div>
                   <ul className="menu menu-horizontal mt-6">
                     <li>
                       <a className="tooltip" data-tip="Copy">
