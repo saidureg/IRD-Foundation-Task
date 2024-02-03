@@ -1,14 +1,17 @@
+import Image from "next/image";
+import userProfile from "@/assets/profile.png";
+
 const Navbar = () => {
   return (
     <div className="navbar">
       <div className="flex-1">
         <a className="btn btn-ghost text-xl">Duas Page</a>
       </div>
-      <div className="flex-none gap-2">
+      <div className="flex-none gap-36">
         <div className="form-control">
           <input
             type="text"
-            placeholder="Search"
+            placeholder="Search by Dua Name"
             className="input input-bordered w-24 md:w-auto"
           />
         </div>
@@ -18,10 +21,12 @@ const Navbar = () => {
             role="button"
             className="btn btn-ghost btn-circle avatar"
           >
-            <div className="w-10 rounded-full">
-              <img
-                alt="Tailwind CSS Navbar component"
-                src="https://daisyui.com/images/stock/photo-1534528741775-53994a69daeb.jpg"
+            <div className="rounded-full">
+              <Image
+                src={userProfile}
+                alt="profile picture"
+                width={120}
+                height={120}
               />
             </div>
           </div>

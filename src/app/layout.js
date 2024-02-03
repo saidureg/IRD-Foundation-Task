@@ -16,15 +16,17 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <body className={inter.className}>
         <div className="bg-base-200 min-h-screen px-8 py-3">
-          <div className="flex gap-3">
+          <div className="flex gap-4">
             <div className="w-[100px] my-3">
               <Menubar />
             </div>
             <div className="flex-1">
               <Navbar />
-              <div className="flex justify-between gap-2">
-                {children}
-                <Sidebar />
+              <div className="flex gap-2 w-full">
+                <div className="w-4/5">{children}</div>
+                <div className="w-1/5">
+                  <Sidebar />
+                </div>
               </div>
             </div>
           </div>
